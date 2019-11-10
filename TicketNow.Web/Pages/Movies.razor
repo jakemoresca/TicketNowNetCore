@@ -1,0 +1,63 @@
+﻿@page "/movies"
+
+@using TicketNow.Web.Data
+@using System.Text.Json;
+@inject IHttpClientFactory HttpClientFactory
+
+<h1>Weather forecast</h1>
+
+<p>This component demonstrates fetching data from a service.</p>
+
+@if (movies == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var movie in movies)
+            {
+                <tr>
+                    <td>@movie.Name</td>
+                    <td>@movie.Description</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <p>Length: @movies.Count()</p>
+}
+
+@code {
+    IEnumerable<Movie> movies;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var request = new HttpRequestMessage(HttpMethod.Get, "https://localhost:5001/movies");
+        var client = HttpClientFactory.CreateClient();
+
+        var response = await client.SendAsync(request);
+
+        if (response.IsSuccessStatusCode)
+        {
+            var content = await response.Content.ReadAsStreamAsync();
+            var settings = new JsonSerializerOptions
+            {
+                PropertyNamingPolicy = JsonNamingPolicy.CamelCase
+            };
+
+            movies = await JsonSerializer.DeserializeAsync<Movie[]>(content, settings);
+        }
+        else
+        {
+            movies = Array.Empty<Movie>();
+        }
+    }
+}

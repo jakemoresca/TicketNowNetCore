@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29326.143
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TicketNow.Movies.Api", "TicketNow.Movies.Api\TicketNow.Movies.Api.csproj", "{938C0FB1-A5D4-4E07-A352-F34FD770A7BB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TicketNow.Movies.Core", "TicketNow.Movies.Core\TicketNow.Movies.Core.csproj", "{231EDD85-B535-4B9C-BCF9-FEDC7B60C719}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Movies", "Movies", "{31E55026-3267-44CF-A192-D0A8300EB8AF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TicketNow.Web", "TicketNow.Web\TicketNow.Web.csproj", "{D7E997FB-E4B3-4E90-ADFE-264D3A10ED9C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicketNow.Common", "TicketNow.Common\TicketNow.Common.csproj", "{967C1DC9-D349-4D72-AFE3-E5491206C4CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicketNow.Movies.Core.Dao.MongoDB", "TicketNow.Movies.Core.Dao\TicketNow.Movies.Core.Dao.MongoDB.csproj", "{F9593B97-5D16-4992-8E64-BB5AA87EE22F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{938C0FB1-A5D4-4E07-A352-F34FD770A7BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{938C0FB1-A5D4-4E07-A352-F34FD770A7BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{938C0FB1-A5D4-4E07-A352-F34FD770A7BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{938C0FB1-A5D4-4E07-A352-F34FD770A7BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{231EDD85-B535-4B9C-BCF9-FEDC7B60C719}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{231EDD85-B535-4B9C-BCF9-FEDC7B60C719}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{231EDD85-B535-4B9C-BCF9-FEDC7B60C719}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{231EDD85-B535-4B9C-BCF9-FEDC7B60C719}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7E997FB-E4B3-4E90-ADFE-264D3A10ED9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7E997FB-E4B3-4E90-ADFE-264D3A10ED9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7E997FB-E4B3-4E90-ADFE-264D3A10ED9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7E997FB-E4B3-4E90-ADFE-264D3A10ED9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{967C1DC9-D349-4D72-AFE3-E5491206C4CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{967C1DC9-D349-4D72-AFE3-E5491206C4CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{967C1DC9-D349-4D72-AFE3-E5491206C4CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{967C1DC9-D349-4D72-AFE3-E5491206C4CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9593B97-5D16-4992-8E64-BB5AA87EE22F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9593B97-5D16-4992-8E64-BB5AA87EE22F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9593B97-5D16-4992-8E64-BB5AA87EE22F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9593B97-5D16-4992-8E64-BB5AA87EE22F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{938C0FB1-A5D4-4E07-A352-F34FD770A7BB} = {31E55026-3267-44CF-A192-D0A8300EB8AF}
+		{231EDD85-B535-4B9C-BCF9-FEDC7B60C719} = {31E55026-3267-44CF-A192-D0A8300EB8AF}
+		{F9593B97-5D16-4992-8E64-BB5AA87EE22F} = {31E55026-3267-44CF-A192-D0A8300EB8AF}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {36AB9F2F-EB70-4A9C-A5F5-916A46ED8BEC}
+	EndGlobalSection
+EndGlobal

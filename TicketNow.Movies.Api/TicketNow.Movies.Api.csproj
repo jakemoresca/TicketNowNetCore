@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TicketNow.Common\TicketNow.Common.csproj" />
+    <ProjectReference Include="..\TicketNow.Movies.Core.Dao\TicketNow.Movies.Core.Dao.MongoDB.csproj" />
+    <ProjectReference Include="..\TicketNow.Movies.Core\TicketNow.Movies.Core.csproj" />
+  </ItemGroup>
+
+</Project>
