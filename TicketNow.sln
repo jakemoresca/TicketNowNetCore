@@ -11,9 +11,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Movies", "Movies", "{31E550
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TicketNow.Web", "TicketNow.Web\TicketNow.Web.csproj", "{D7E997FB-E4B3-4E90-ADFE-264D3A10ED9C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicketNow.Common", "TicketNow.Common\TicketNow.Common.csproj", "{967C1DC9-D349-4D72-AFE3-E5491206C4CD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TicketNow.Common", "TicketNow.Common\TicketNow.Common.csproj", "{967C1DC9-D349-4D72-AFE3-E5491206C4CD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicketNow.Movies.Core.Dao.MongoDB", "TicketNow.Movies.Core.Dao\TicketNow.Movies.Core.Dao.MongoDB.csproj", "{F9593B97-5D16-4992-8E64-BB5AA87EE22F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TicketNow.Movies.Core.Dao.MongoDB", "TicketNow.Movies.Core.Dao\TicketNow.Movies.Core.Dao.MongoDB.csproj", "{F9593B97-5D16-4992-8E64-BB5AA87EE22F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
